@@ -1,8 +1,28 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #eaebea;
   --foreground: #171717;
+
+ --sidebar-background: hsl(0, 0%, 95%); 
+
+  /* -- Parent Topics (Level 1) -- */
+  --sidebar-sub-link-color: #091408;/* Soft Rose */
+  --sidebar-sub-link-color-hover: #091408;
+  --sidebar-sub-link-color-active: hsl(0, 0%, 95%); 
+
+  --sidebar-sub-link-background: transparent;
+  --sidebar-sub-link-background-hover: #d3d4d3;
+  --sidebar-sub-link-background-active: #091408; 
+
+  /* -- Child Topics (Level 2) -- */
+  --sidebar-sub-sub-link-color: #091408; /* Muted Red/Pink */
+  --sidebar-sub-sub-link-color-hover: #091408;
+  --sidebar-sub-sub-link-color-active: #091408;
+
+  --sidebar-sub-sub-link-background: #eaebea;
+  --sidebar-sub-sub-link-background-hover: hsl(353, 25%, 90%);
+  --sidebar-sub-sub-link-background-active: #ec6271; /* Slightly lighter red block */
 }
 
 @theme inline {

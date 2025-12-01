@@ -1,0 +1,102 @@
+.side-nav {
+    /* @TODO - add a variable for the top bar height and use it appropriately */
+    height: calc(100vh - 60px);
+    background: var(--sidebar-background);
+    overflow-y: auto;
+    position: sticky;
+    top: 60px;
+    flex-direction: column;
+    width: 15rem;
+    flex-shrink: 0;
+    box-shadow: 0px 0px 5px 1px hsl(0, 0%, 50%);
+}
+
+.sidebar-nav-group {
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: large;
+    padding: 1rem;
+    display: block;
+    box-shadow: 0px 0px 5px 1px hsl(0, 0%, 50%);
+}
+
+.sidebar-nav-group-link {
+    padding: 0.25rem;
+    border-radius: 5px;
+    transition: all 0.15s ease-in-out
+}
+
+.sidebar-nav-group-link:hover {
+    background: hsl(0, 0%, 85%)
+}
+
+.sub-topics-container {
+    background: hsl(265, 26%, 10%);
+}
+
+.expansion-arrow {
+    transition: all 0.25s ease;
+    border-radius: 50%;
+}
+
+.expansion-arrow:hover {
+    background: #bebbbb
+}
+
+.secondary-link {
+    padding: 0.5rem 0rem 0.5rem 0.5rem;
+    /* display: block; */
+    display: flex;
+
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    background: var(--sidebar-sub-link-background);
+    cursor: pointer;
+    color: var(--sidebar-sub-link-color);
+    /* box-shadow: inset -5px 0px 5px -2px var(--sidebar-background); */
+
+    border-bottom: 1px solid #a1c854;
+    /* border-radius: 0px 5px 5px 0px; */
+    transition: all 0.15s ease
+}
+
+.secondary-link-text:hover {
+    text-decoration: underline;
+}
+
+.secondary-link:hover {
+    color: var(--sidebar-sub-link-color-hover);
+    background: var(--sidebar-sub-link-background-hover);
+
+}
+
+.secondary-link-active {
+    border-left: 10px solid #a1c854;
+    background: var(--sidebar-sub-link-background-active);
+    color: var(--sidebar-sub-link-color-active)
+}
+
+.tertiary-link {
+    display: flex;
+    padding: 0.25rem 0rem 0.25rem 2rem;
+    color: var(--sidebar-sub-sub-link-color);
+    background: var(--sidebar-sub-sub-link-background);
+
+    cursor: pointer;
+    border-bottom: 1px solid #f5e134;
+    transition: all 0.15s ease
+}
+
+.tertiary-link:hover {
+    color: var(--sidebar-sub-sub-link-color-hover);
+    background: var(--sidebar-sub-sub-link-background-hover);
+    text-decoration: underline;
+}
+
+.tertiary-link-active {
+    border-left: 5px solid #f5e134;
+    color: var(--sidebar-sub-sub-link-color-active);
+    background: var(--sidebar-sub-sub-link-background-active);
+}
