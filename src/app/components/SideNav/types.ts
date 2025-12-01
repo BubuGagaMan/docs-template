@@ -9,3 +9,8 @@ export interface LinkProps  {
     linkHeader: string
     href: string
 }
+
+// note that the primary links reside in the main, top nav bar...
+export interface secondaryLink extends LinkProps {
+    tertiaryLinks: LinkProps[]
+}
