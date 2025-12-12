@@ -4,7 +4,7 @@ import { useState } from 'react'
 import './styles.css'
 import { TiTickOutline } from 'react-icons/ti'
 
-export default function CopyBtn({ nodes } : {nodes: React.ReactNode[]}) {
+export default function CopyBtn({ nodes } : {nodes: any}) {
 
     const [copied, setCopied] = useState(false)
 
@@ -12,7 +12,7 @@ export default function CopyBtn({ nodes } : {nodes: React.ReactNode[]}) {
         setCopied(true)
         // @TODO - fix this type error... or the implementation here altogether - maybe select the parent 
         // and then the child with the code-block-contents/text/whatever class
-        const textContent = nodes.map(node => node?.props.children)
+        const textContent = nodes.map((node: any) => node?.props.children)
         const finalString = textContent.join('\n').trim()
 
         navigator.clipboard.writeText(finalString)
