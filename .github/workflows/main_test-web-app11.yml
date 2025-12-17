@@ -61,5 +61,4 @@ jobs:
           app-name: 'test-web-app11'
           slot-name: 'Production'
           package: .
-          startup-command: npm start
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7FFC645D6E3B49599AE213D674F28961 }}
